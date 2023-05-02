@@ -22,7 +22,7 @@ CSP 通过要求开发人员检索其资产的来源并将其列入白名单来�
 
 To use CSP with MUI (and emotion), you need to use a nonce. A nonce is a randomly generated string that is only used once, therefore you need to add server middleware to generate one on each request.
 
-CSP nonce 是一个 Base 64 编码的字符串。 你可以生成这样一个：
+CSP nonce 是一个 Base 64 编码的字符串。 您可以生成这样一个：
 
 ```js
 import uuidv4 from 'uuid/v4';
@@ -30,7 +30,7 @@ import uuidv4 from 'uuid/v4';
 const nonce = new Buffer(uuidv4()).toString('base64');
 ```
 
-你必须使用 UUID 4，因为它可以生成一个 **不可预测** 的字符串。 接下来您可以将此随机数应用于 CSP 头部。 应用了随机数时，CSP 头部可能看起来像这样：
+您必须使用 UUID 4，因为它可以生成一个 **不可预测** 的字符串。 接下来您可以将此随机数应用于 CSP 头部。 应用了随机数时，CSP 头部可能看起来像这样：
 
 ```js
 header('Content-Security-Policy').set(
@@ -38,7 +38,7 @@ header('Content-Security-Policy').set(
 );
 ```
 
-你应该在服务端的 `<style>` 标签中传递一次性加密数字（nonce）。
+您应该在服务端的 `<style>` 标签中传递一次性加密数字（nonce）。
 
 ```jsx
 <style

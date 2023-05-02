@@ -16,7 +16,7 @@ materialDesign: https://m2.material.io/design/typography/the-type-system.html
 
 ## 概述
 
-Material-UI **不会**自动加载 _Roboto_ 字体。 你负责加载你的应用程序中使用的任何字体。 有这样几个简单的方法来加载 Roboto 字体。 For more advanced configuration, check out [the theme customization section](/material-ui/customization/typography/).
+Material-UI **不会**自动加载 _Roboto_ 字体。 您负责加载您的应用程序中使用的任何字体。 有这样几个简单的方法来加载 Roboto 字体。 For more advanced configuration, check out [the theme customization section](/material-ui/customization/typography/).
 
 ## Roboto 字体 CDN
 
@@ -125,4 +125,4 @@ A few key factors to follow for an accessible typography:
 
 - **字体颜色**。 在文本颜色和背景颜色间提供足够的对比性，请参考 [WCAG 2.0 颜色对比度](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 的最低标准（4.5:1）。
 - **字体大小（字阶）**。 Use [relative units (rem)](/material-ui/customization/typography/#font-size) to accommodate the user's settings.
-- **标题等级**。 请不要跳过[标题的等级](https://www.w3.org/WAI/tutorials/page-structure/headings/) 。 你需要将 [ style 从语义元素中分离开来](#changing-the-semantic-element)，这样能够解决这个问题。
+- **标题等级**。 请不要跳过[标题的等级](https://www.w3.org/WAI/tutorials/page-structure/headings/) 。 您需要将 [ style 从语义元素中分离开来](#changing-the-semantic-element)，这样能够解决这个问题。

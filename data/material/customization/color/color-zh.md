@@ -84,7 +84,7 @@ If you are using the default primary and / or secondary shades then by providing
 
 ### 调色板
 
-若给定了一种*色调*（如红色，粉红色等）以及一个*阴影* （500，600 等），你可以这样导入颜色：
+若给定了一种*色调*（如红色，粉红色等）以及一个*阴影* （500，600 等），您可以这样导入颜色：
 
 ```jsx
 import HUE from '@mui/core/colors/HUE';

@@ -1,6 +1,6 @@
 # 示例项目
 
-<p class="description">请参考以下一些入门项目，来帮助你快速开始。</p>
+<p class="description">请参考以下一些入门项目，来帮助您快速开始。</p>
 
 ## 官方示例
 
@@ -77,7 +77,7 @@ If you want to start with a more complete and real-world example, you could take
   - 使用此在线工具构建您的完整应用程序
   - 选择您的框架和库（React & Material UI!）
   - 选择您的数据库（SQL，MongoDB 或 Firestree）
-  - 用直观的 GUI 模拟你的数据库和应用程序
+  - 用直观的 GUI 模拟您的数据库和应用程序
   - 生成您的应用程序，包括一个完整的 scaffolded 后台
   - 在线预览您的应用程序，并下载生成的代码
 

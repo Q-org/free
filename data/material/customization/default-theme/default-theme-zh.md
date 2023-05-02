@@ -1,6 +1,6 @@
 # 默认主题
 
-<p class="description">你在下面可以看到使用主题对象（theme object）的默认值的样子。</p>
+<p class="description">您在下面可以看到使用主题对象（theme object）的默认值的样子。</p>
 
 ## 探索
 

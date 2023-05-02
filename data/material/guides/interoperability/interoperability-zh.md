@@ -51,7 +51,7 @@ export default function PlainCssSlider() {
 
 ### CSS 注入顺序 ⚠️
 
-**注意：** 大多数的 CSS-in-JS 解决方案是在 HTML `<head>` 的底部注入它们的样式，这会导致你的自定义样式被 Material-UI 的样式规则所覆盖。 如果你有移除 **!important** 的需求，那么就需要改变 CSS 注入顺序。 Here's a demo of how it can be done in Material-UI:
+**注意：** 大多数的 CSS-in-JS 解决方案是在 HTML `<head>` 的底部注入它们的样式，这会导致您的自定义样式被 Material-UI 的样式规则所覆盖。 如果您有移除 **!important** 的需求，那么就需要改变 CSS 注入顺序。 Here's a demo of how it can be done in Material-UI:
 
 ```jsx
 import * as React from 'react';
@@ -81,7 +81,7 @@ const cache = createCache({
 export default function PlainCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {这里编写你的组件树。 Now you can override MUI's styles. */}
+      {这里编写您的组件树。 Now you can override MUI's styles. */}
     </CacheProvider>
   );
 } */}
@@ -94,7 +94,7 @@ export default function PlainCssPriority() {
 
 ### 更深层的元素
 
-如果你试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 When writing overrides, you need to do the same.
+如果您试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 When writing overrides, you need to do the same.
 
 以下示例除了覆盖滑块本身的自定义样式外，还覆盖了滑块的 `thumb` 样式。
 
@@ -204,7 +204,7 @@ export default function GlobalCssSlider() {
 
 ### CSS 注入顺序 ⚠️
 
-如果你有移除 **!important** 的需求，那么就需要改变 CSS 注入顺序。 **注意：** 大多数的 CSS-in-JS 解决方案是在 HTML `<head>` 的底部注入它们的样式，这会导致你的自定义样式被 Material-UI 的样式规则所覆盖。 Here's a demo of how it can be done in Material-UI:
+如果您有移除 **!important** 的需求，那么就需要改变 CSS 注入顺序。 **注意：** 大多数的 CSS-in-JS 解决方案是在 HTML `<head>` 的底部注入它们的样式，这会导致您的自定义样式被 Material-UI 的样式规则所覆盖。 Here's a demo of how it can be done in Material-UI:
 
 ```jsx
 import * as React from 'react';
@@ -237,7 +237,7 @@ const cache = createCache({
 export default function GlobalCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* 这里编写你的组件树。 Now you can override MUI's styles. */}
+      {/* 这里编写您的组件树。 Now you can override MUI's styles. */}
     </CacheProvider>
   );
 }
@@ -247,7 +247,7 @@ export default function GlobalCssPriority() {
 
 ### 更深层的元素
 
-如果你试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 所以在编写覆盖样式的时候，你也需要这样做。
+如果您试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 所以在编写覆盖样式的时候，您也需要这样做。
 
 以下示例除了覆盖滑块本身的自定义样式外，还覆盖了滑块的 `thumb` 样式。
 
@@ -322,7 +322,7 @@ export default function StyledComponents() {
 
 ### 更深层的元素
 
-如果你试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 所以在编写覆盖样式的时候，你也需要这样做。
+如果您试图自定义滑块的样式，那么很可能会影响到滑块的一些子元素，例如滚动条的箭头（thumb）。 在 Material-UI 中，所有的子元素都增加了两层的特定类：`.parent .child {}`。 所以在编写覆盖样式的时候，您也需要这样做。
 
 以下示例除了覆盖滑块本身的自定义样式外，还覆盖了滑块的 `thumb` 样式。
 
@@ -361,7 +361,7 @@ export default function StyledComponentsDeep2() {
 
 ### 主题
 
-我们鼓励你在 Material-UI 和你项目的其他部分之间共享相同的主题对象。
+我们鼓励您在 Material-UI 和您项目的其他部分之间共享相同的主题对象。
 
 :::warning
 ⚠️ If you are **already** using a custom theme with styled-components or emotion, it might not be compatible with MUI's theme specification. If it's not compatible, you need to render MUI's ThemeProvider <b>first</b>. This will ensure the theme structures are isolated. This is ideal for the progressive adoption of MUI's components in the codebase.
@@ -660,7 +660,7 @@ const cache = createCache({
 export default function PlainCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {这里编写你的组件树。 Now you can override MUI's styles. */}
+      {这里编写您的组件树。 Now you can override MUI's styles. */}
     </CacheProvider>
   );
 }

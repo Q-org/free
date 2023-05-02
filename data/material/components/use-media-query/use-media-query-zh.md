@@ -19,11 +19,11 @@ githubLabel: 'hook: useMediaQuery'
 
 ## 简单的媒体查询
 
-你应该将媒体查询提供给 hook 作为第一个参数。 The media query string can be any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/material-ui/customization/dark-mode/#system-preference).
+您应该将媒体查询提供给 hook 作为第一个参数。 The media query string can be any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/material-ui/customization/dark-mode/#system-preference).
 
 {{"demo": "SimpleMediaQuery.js", "defaultCodeOpen": true}}
 
-⚠️ 由于每个浏览器的限制，你不能使用 `'print'`，例如 [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=774398) 上的这个问题。
+⚠️ 由于每个浏览器的限制，您不能使用 `'print'`，例如 [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=774398) 上的这个问题。
 
 ## 使用 Material-UI 的断点辅助功能
 
@@ -43,7 +43,7 @@ function MyComponent() {
 
 {{"demo": "ThemeHelper.js", "defaultCodeOpen": false}}
 
-或者你也可以使用一个回调函数，其第一个参数是 theme：
+或者您也可以使用一个回调函数，其第一个参数是 theme：
 
 ```jsx
 import useMediaQuery from '@mui/core/useMediaQuery';
@@ -55,19 +55,19 @@ function MyComponent() {
 }
 ```
 
-⚠️ 由于这个方法**没有默认的**主题支持，所以你必须将它注入到父级主题提供者（parent theme provider）中。
+⚠️ 由于这个方法**没有默认的**主题支持，所以您必须将它注入到父级主题提供者（parent theme provider）中。
 
 ## 使用 JavaScript 的语法
 
-你可以使用 [json2mq](https://github.com/akiran/json2mq) 来从 JavaScript 对象中生成媒体查询字符串。
+您可以使用 [json2mq](https://github.com/akiran/json2mq) 来从 JavaScript 对象中生成媒体查询字符串。
 
 {{"demo": "JavaScriptMedia.js", "defaultCodeOpen": true}}
 
 ## 测试
 
-你需要在测试环境中实现 [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)。
+您需要在测试环境中实现 [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)。
 
-例如：[暂时还不支持 jsdom](https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom)。 所以你应来兼容（polyfill）它。 我们推荐使用 [css-mediaquery](https://github.com/ericf/css-mediaquery) 来创造一个模拟环境从而达到兼容的目的。
+例如：[暂时还不支持 jsdom](https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom)。 所以您应来兼容（polyfill）它。 我们推荐使用 [css-mediaquery](https://github.com/ericf/css-mediaquery) 来创造一个模拟环境从而达到兼容的目的。
 
 ```js
 import mediaQuery from 'css-mediaquery';
@@ -91,13 +91,13 @@ describe('MyTests', () => {
 
 ## 仅在客户端渲染
 
-要和服务器进行同步使用（hydration），hook 需要渲染两次。 第一次使用 `false` 表示服务端的值，第二次使用已解析的值。 这个双向渲染周期带有一个缺点。 速度较慢。 如果你只需要**客户端渲染**，那么你可以设置 `noSsr` 选项为 `true`。
+要和服务器进行同步使用（hydration），hook 需要渲染两次。 第一次使用 `false` 表示服务端的值，第二次使用已解析的值。 这个双向渲染周期带有一个缺点。 速度较慢。 如果您只需要**客户端渲染**，那么您可以设置 `noSsr` 选项为 `true`。
 
 ```js
 const matches = useMediaQuery('(min-width:600px)', { noSsr: true });
 ```
 
-或者你可以通过全局主题设置来启用它：
+或者您可以通过全局主题设置来启用它：
 
 ```js
 const theme = createTheme({
@@ -234,7 +234,7 @@ The `withWidth()` higher-order component injects the screen width of the page. Y
 
 - `options.defaultMatches` (_bool_ [optional]): As `window.matchMedia()` is unavailable on the server, we return a default matches during the first mount. 默认值为 `false`。 默认值为 `false`。
 - `options.matchMedia` (_func_ [optional]): You can provide your own implementation of _matchMedia_. 用其您可以处理一个 iframe 内容窗口。 用其您可以处理一个 iframe 内容窗口。
-- `options.noSsr` (_bool_ [optional])：默认为 `false`。 要和服务器进行同步使用（hydration），hook 需要渲染两次。 A first time with `false`, the value of the server, and a second time with the resolved value. 这个双向渲染周期带有一个缺点。 速度较慢。 如果你只需要 **客户端**渲染，那么可以将该选项设置为 `true`。
+- `options.noSsr` (_bool_ [optional])：默认为 `false`。 要和服务器进行同步使用（hydration），hook 需要渲染两次。 A first time with `false`, the value of the server, and a second time with the resolved value. 这个双向渲染周期带有一个缺点。 速度较慢。 如果您只需要 **客户端**渲染，那么可以将该选项设置为 `true`。
 - `options.ssrMatchMedia` (_func_ [optional]): You can provide your own implementation of _matchMedia_ in a [server-side rendering context](#server-side-rendering).
 
 Note: You can change the default options using the [`default props`](/material-ui/customization/theme-components/#default-props) feature of the theme with the `MuiUseMediaQuery` key.

@@ -4,12 +4,12 @@
 
 您还在找 v3 版本的文档吗？ [您可以在这里找到它们](https://material-ui.com/versions/) 。
 
-::info 本文件是一项正在进行的工作。 你是否升级了你的网站并遇到了这里没有涉及的问题？ [在GitHub上添加你的修改](https://github.com/mui/material-ui/blob/master/docs/data/material/migration/migration-v3/migration-v3.md)
+::info 本文件是一项正在进行的工作。 您是否升级了您的网站并遇到了这里没有涉及的问题？ [在GitHub上添加您的修改](https://github.com/mui/material-ui/blob/master/docs/data/material/migration/migration-v3/migration-v3.md)
 :::
 
 ## 简介
 
-这是一个将你的网站从Material UI v3升级到v4的参考。 虽然这里涵盖了很多内容，但你可能不需要为你的网站做所有事情。 我们会尽我们最大的努力让文档简单易懂，并尽可能有序地介绍，这样您可以迅速对 v4 版本游刃有余。
+这是一个将您的网站从Material UI v3升级到v4的参考。 虽然这里涵盖了很多内容，但您可能不需要为您的网站做所有事情。 我们会尽我们最大的努力让文档简单易懂，并尽可能有序地介绍，这样您可以迅速对 v4 版本游刃有余。
 
 ## 为什么您需要迁移呢
 
@@ -17,11 +17,11 @@
 
 ## 更新您的依赖包
 
-你需要做的第一件事就是更新你的依赖关系。
+您需要做的第一件事就是更新您的依赖关系。
 
 ### 更新Material UI版本
 
-你需要更新你的`package.json`以使用最新版本的Material UI。
+您需要更新您的`package.json`以使用最新版本的Material UI。
 
 ```json
 "dependencies": {
@@ -45,7 +45,7 @@ React的最低要求版本从`react@^16.3.0`增加到`react@^16.8.0`. 这使我�
 
 ### 更新Material UI风格版本
 
-如果你之前使用`@material-ui/styles`与v3，你需要更新你的`package.json`以使用最新版本的Material UI Styles。
+如果您之前使用`@material-ui/styles`与v3，您需要更新您的`package.json`以使用最新版本的Material UI Styles。
 
 ```json
 "dependencies": {
@@ -407,7 +407,7 @@ function MySelect({ children }) {
 
 - [Typography] 将默认的字体从 `body2` 换成 `body1`。 默认为 16px 的字体大小比默认为 14px 好。 Bootstrap，material.io，甚至本文档都使用的是 16px 作为默认字体大小。 像 Ant Design 一样使用 14px 是可以理解的，因为中国的用户使用了不同的字母表。 我们建议将 12px 作为日语的默认字体大小。
 - [Typography] 移除了铸排变体的默认颜色。 大多数情况下，字体颜色应该是继承而来的。 这是网站的默认行为。
-- [Typography] 按照 [该讨论](https://github.com/mui/material-ui/issues/13028) 的逻辑，我们将 `color="default"` 重命名为 `color="initial"`。 你不应该再使用 _default_，因为它缺少明确的语义。
+- [Typography] 按照 [该讨论](https://github.com/mui/material-ui/issues/13028) 的逻辑，我们将 `color="default"` 重命名为 `color="initial"`。 您不应该再使用 _default_，因为它缺少明确的语义。
 
 ### Node
 

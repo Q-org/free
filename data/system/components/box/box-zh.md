@@ -25,7 +25,7 @@ All system properties are available via the [`sx` prop](/system/getting-started/
 
 ## 覆盖 Material-UI 组件
 
-Box 组件能够封装您的组件。 它创建了一个新的 DOM 元素，默认情况下为 `<div>`，并可以通过 `组件` 的属性进行更改。 假设反之你想使用一个 `<span>`：
+Box 组件能够封装您的组件。 它创建了一个新的 DOM 元素，默认情况下为 `<div>`，并可以通过 `组件` 的属性进行更改。 假设反之您想使用一个 `<span>`：
 
 {{"demo": "BoxComponent.js", "defaultCodeOpen": true }}
 

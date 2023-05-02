@@ -1,6 +1,6 @@
 # TypeScript
 
-<p class="description">借助 TypeScript，你可以为 JavaScript 添加静态类型，从而提高代码质量及开发者的工作效率。</p>
+<p class="description">借助 TypeScript，您可以为 JavaScript 添加静态类型，从而提高代码质量及开发者的工作效率。</p>
 
 ## `withStyles` 的使用
 

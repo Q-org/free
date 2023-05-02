@@ -77,7 +77,7 @@ If you would like to remove some of the MUI specific features, you can do it lik
 
 ## 创建自定义的 `styled()`工具
 
-如果你想让你的`styled()`工具使用一个不同的默认主题，你可以用`createStyled()` 工具很轻松的创建一个你自己的版本。
+如果您想让您的`styled()`工具使用一个不同的默认主题，您可以用`createStyled()` 工具很轻松的创建一个您自己的版本。
 
 ```js
 import { createStyled, createTheme } from '@mui/system';

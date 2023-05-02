@@ -1,22 +1,22 @@
 # Theming 主题
 
-<p class="description">用你的主题定制MUI。 你可以改变颜色、文字铸排等等。</p>
+<p class="description">用您的主题定制MUI。 您可以改变颜色、文字铸排等等。</p>
 
 主题可以指定组件的配色、平面的明暗、阴影的深浅、墨水元素的合适的不透明度等等。
 
-样式可让您为应用程序应用一致的音调。 它可以让你 **自定义所有的设计方面** 项目，以满足您的企业或品牌的特定需求。
+样式可让您为应用程序应用一致的音调。 它可以让您 **自定义所有的设计方面** 项目，以满足您的企业或品牌的特定需求。
 
-为了提高应用程序之间的一致性，你可以在明暗主题类型中选择。 默认情况下，组件会使用浅色的主题样式。
+为了提高应用程序之间的一致性，您可以在明暗主题类型中选择。 默认情况下，组件会使用浅色的主题样式。
 
 ## Theme provider
 
-如果你想要使用自定义的主题，那么需要使用 `MuiThemeProvider` 组件将样式注入到你的应用中。 但是，这是可选的；因为 Material-UI 组件带有默认主题。
+如果您想要使用自定义的主题，那么需要使用 `MuiThemeProvider` 组件将样式注入到您的应用中。 但是，这是可选的；因为 Material-UI 组件带有默认主题。
 
-`ThemeProvider` 依赖于 [React 的上下文（context）功能](https://react.dev/learn/passing-data-deeply-with-context)来将主题传递给下级组件，所以你需要确保 `ThemeProvider` 是你试图自定义组件的父级组件。 您可以在 [API 章节](#themeprovider)中了解有关此内容的更多信息 。
+`ThemeProvider` 依赖于 [React 的上下文（context）功能](https://react.dev/learn/passing-data-deeply-with-context)来将主题传递给下级组件，所以您需要确保 `ThemeProvider` 是您试图自定义组件的父级组件。 您可以在 [API 章节](#themeprovider)中了解有关此内容的更多信息 。
 
 ## 主题配置变量
 
-修改主题配置变量是使 MUI 符合你的需求的最有效方法。 以下各节涵盖了一些最重要的主题变量：
+修改主题配置变量是使 MUI 符合您的需求的最有效方法。 以下各节涵盖了一些最重要的主题变量：
 
 - [`.palette 调色板`](/material-ui/customization/palette/)
 - [`.typography 文字铸排`](/material-ui/customization/typography/)

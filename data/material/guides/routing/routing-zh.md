@@ -1,6 +1,6 @@
 # 路由库
 
-<p class="description">默认情况下，导航使用原生 <code>&lt;a&gt;</code> 元素， 你可以自定义它来使用你自己的路由器； 例如，使用 Next.js的链接或React-router。</p>
+<p class="description">默认情况下，导航使用原生 <code>&lt;a&gt;</code> 元素， 您可以自定义它来使用您自己的路由器； 例如，使用 Next.js的链接或React-router。</p>
 
 ## 导航组件
 

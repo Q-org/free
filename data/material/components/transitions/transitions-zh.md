@@ -9,13 +9,13 @@ githubLabel: 'component: Transition'
 
 <p class="description">过渡动画有利于增强 UI 的表现力并且让人更易于使用。</p>
 
-Material-UI 提供了一系列的过渡效果，你可以将一些基本的 [动作](https://m2.material.io/design/motion/) 添加到你的应用组件中。
+Material-UI 提供了一系列的过渡效果，您可以将一些基本的 [动作](https://m2.material.io/design/motion/) 添加到您的应用组件中。
 
 {{"component": "modules/components/ComponentLinkHeader.js", "design": false}}
 
 ## Collapse 折叠
 
-从子元素的起始边缘开始展开。 如果你需要水平折叠，请使用 `orientation` 属性。 `collapsedHeight` 属性可以用于设置未扩展时的最小高度值。
+从子元素的起始边缘开始展开。 如果您需要水平折叠，请使用 `orientation` 属性。 `collapsedHeight` 属性可以用于设置未扩展时的最小高度值。
 
 {{"demo": "SimpleCollapse.js", "bg": true}}
 
@@ -63,7 +63,7 @@ The Slide component also accepts `container` prop, which is a reference to a DOM
 
 ```jsx
 // 'props' 对象包含一个 'style' 属性。
-// 你需要将这个属性提供给 `div` 元素，如下所示。
+// 您需要将这个属性提供给 `div` 元素，如下所示。
 const MyComponent = React.forwardRef((props, ref) {
   return (
     <div ref={ref} {...props}>
@@ -96,7 +96,7 @@ To animate a component when it is mounted or unmounted, you can use the [`Transi
 - 当进入过渡时调用 `onEnter` 回调属性。
 - 当退出过渡完成后应该调用 `onExited` 回调属性。 这两个回调属性保证了当在一个关闭的状态并展示完过渡动画时，才会移除子内容。
 
-For more information on creating a custom transition, visit the _react-transition-group_ [`Transition` documentation](http://reactcommunity.org/react-transition-group/transition/). 你还可以访问一些组件的专用部分：
+For more information on creating a custom transition, visit the _react-transition-group_ [`Transition` documentation](http://reactcommunity.org/react-transition-group/transition/). 您还可以访问一些组件的专用部分：
 
 - [Modal](/material-ui/react-modal/#transitions)
 - [Dialog](/material-ui/react-dialog/#transitions)

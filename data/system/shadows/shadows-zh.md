@@ -4,7 +4,7 @@
 
 ## 示例
 
-该工具可以让你控制两平面之间沿 z 轴方向的相对深度，或者说距离。 By default, there are 25 elevation levels.
+该工具可以让您控制两平面之间沿 z 轴方向的相对深度，或者说距离。 By default, there are 25 elevation levels.
 
 {{"demo": "Demo.js", "defaultCodeOpen": false, "bg": true}}
 

@@ -64,7 +64,7 @@ const theme = createTheme({
 
 ### 直接提供颜色
 
-如果你想要提供更多的自定义颜色，你可以创建你自己的调色板，或者直接为一些或者所有的 `theme.palette` 键提供颜色：
+如果您想要提供更多的自定义颜色，您可以创建您自己的调色板，或者直接为一些或者所有的 `theme.palette` 键提供颜色：
 
 ```js
 import { createTheme } from '@mui/material/styles';

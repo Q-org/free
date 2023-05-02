@@ -6,7 +6,7 @@
 
 > ⚠️ `@mui/styles` 与 [React.StrictMode](https://react.dev/reference/react/StrictMode) 或 React 18 不兼容。
 
-Material-UI 旨在为构建动态的 UI 提供扎实的基础。 为了构造更加清晰的结构，**我们单独发布了 Material-UI 组件中使用的样式方案**，它将作为一个 `@mui/styles` 的依赖包存在。 你可以使用它，但你不一定要使用它，因为MUI也[可以与](/material-ui/guides/interoperability/)所有其他主要的样式解决方案互操作。
+Material-UI 旨在为构建动态的 UI 提供扎实的基础。 为了构造更加清晰的结构，**我们单独发布了 Material-UI 组件中使用的样式方案**，它将作为一个 `@mui/styles` 的依赖包存在。 您可以使用它，但您不一定要使用它，因为MUI也[可以与](/material-ui/guides/interoperability/)所有其他主要的样式解决方案互操作。
 
 ## 为什么要使用 Material-UI 的样式方案呢？
 
@@ -14,12 +14,12 @@ Material-UI 旨在为构建动态的 UI 提供扎实的基础。 为了构造更
 
 MUI的风格化解决方案受到许多其他风格化库的启发，如[styled-components](https://styled-components.com/)和[Emotion](https://emotion.sh/)。
 
-- 💅 你可以期待与styled-components[一样的优势](https://styled-components.com/docs/basics#motivation)。
+- 💅 您可以期待与styled-components[一样的优势](https://styled-components.com/docs/basics#motivation)。
 
 <!-- #default-branch-switch -->
 
 - 🚀 它的速度[非常快](https://github.com/mui/material-ui/tree/master/benchmark/server#material-uistyles)。
-- 🧩 你可以通过一个 [插件](https://github.com/cssinjs/jss/blob/master/docs/plugins.md) API 来扩展。
+- 🧩 您可以通过一个 [插件](https://github.com/cssinjs/jss/blob/master/docs/plugins.md) API 来扩展。
 - ⚡️ 它使用 [JSS](https://github.com/cssinjs/jss) 为其核心 —— 一个 [高性能的](https://github.com/cssinjs/jss/blob/master/docs/performance.md) JavaScript 到 CSS 的编译器，它在运行时和服务器端编译。
 - 📦 小于[15KB的gzipped](https://bundlephobia.com/package/@mui/styles)；如果与MUI一起使用，不会增加包的大小。
 
@@ -70,7 +70,7 @@ export default function Hook() {
 
 ### Styled components API
 
-注意：在只是用调用语法—— 您仍需使用一个 JSS 对象来定义你的样式。 你也可以[改变这种行为](/system/styles/advanced/#string-templates)，但有一些限制。
+注意：在只是用调用语法—— 您仍需使用一个 JSS 对象来定义您的样式。 您也可以[改变这种行为](/system/styles/advanced/#string-templates)，但有一些限制。
 
 ```jsx
 import * as React from 'react';
@@ -208,7 +208,7 @@ const useStyles = makeStyles((theme) => ({
 
 ## 使用主题背景
 
-从v5开始，MUI不再使用JSS作为其默认样式解决方案。 如果你仍然想使用`@mui/styles`导出的实用程序，并且它们依赖于`主题`，你将需要提供`主题`作为上下文的一部分。 为此，你可以使用`@mui/styles`中的`ThemeProvider`组件，或者，如果你已经在使用`@mui/material`，你应该使用从`@mui/material/styles`中导出的组件，这样，来自'@mui/material'的组件就可以使用同一个`主题`。
+从v5开始，MUI不再使用JSS作为其默认样式解决方案。 如果您仍然想使用`@mui/styles`导出的实用程序，并且它们依赖于`主题`，您将需要提供`主题`作为上下文的一部分。 为此，您可以使用`@mui/styles`中的`ThemeProvider`组件，或者，如果您已经在使用`@mui/material`，您应该使用从`@mui/material/styles`中导出的组件，这样，来自'@mui/material'的组件就可以使用同一个`主题`。
 
 ```jsx
 import { makeStyles } from '@mui/styles';

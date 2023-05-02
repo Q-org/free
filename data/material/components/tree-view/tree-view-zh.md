@@ -55,7 +55,7 @@ const data = {
 
 ## ContentComponent 属性
 
-你可以使用 `ContentComponent` 属性和 `useTreeItem` hook 来进一步定制 TreeItem 的行为。
+您可以使用 `ContentComponent` 属性和 `useTreeItem` hook 来进一步定制 TreeItem 的行为。
 
 比如限制扩展动作，只能够点击图标。
 
@@ -105,4 +105,4 @@ const data = {
 
 组件遵循了 WAI-ARIA 授权的一些标准。
 
-如果你想让树视图具有无障碍设计，那么你必须使用 `aria-labelledby` 或 `aria-label` 在树视图上引用或提供标签，否则屏幕阅读器会将其声明为“树（tree）”，从而会使人很难理解特定树项的上下文的含义。
+如果您想让树视图具有无障碍设计，那么您必须使用 `aria-labelledby` 或 `aria-label` 在树视图上引用或提供标签，否则屏幕阅读器会将其声明为“树（tree）”，从而会使人很难理解特定树项的上下文的含义。

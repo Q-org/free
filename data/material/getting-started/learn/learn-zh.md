@@ -1,6 +1,6 @@
 # 学习资源
 
-<p class="description"> Material-UI 新手? 我们为你精心准备的学习资源，可以帮助你快速入门。</p>
+<p class="description"> Material-UI 新手? 我们为您精心准备的学习资源，可以帮助您快速入门。</p>
 
 ## 第一个组件
 

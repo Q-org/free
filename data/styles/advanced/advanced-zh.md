@@ -10,7 +10,7 @@
 
 若您想将主题传递到 React 组件树，请将添加 `ThemeProvider` 包装到应用程序的顶层。 然后，您可以在样式函数中访问主题对象。
 
-> 这个例子为定制的组件创建了一个主题对象。 如果你打算使用MUI的一些组件，你需要使用`createTheme()`方法提供一个更丰富的主题结构。 前往[主题部分](/material-ui/customization/theming/) ，学习如何建立你的自定义MUI主题。
+> 这个例子为定制的组件创建了一个主题对象。 如果您打算使用MUI的一些组件，您需要使用`createTheme()`方法提供一个更丰富的主题结构。 前往[主题部分](/material-ui/customization/theming/) ，学习如何建立您的自定义MUI主题。
 
 ```jsx
 import { ThemeProvider } from '@mui/core/styles';
@@ -81,7 +81,7 @@ const DeepChild = withTheme(DeepChildRaw);
 
 {{"demo": "ThemeNesting.js"}}
 
-内部主题将 **覆盖** 外部主题。 你可以提供一个函数来扩展外层主题：
+内部主题将 **覆盖** 外部主题。 您可以提供一个函数来扩展外层主题：
 
 ```jsx
 <ThemeProvider theme={…} <ThemeProvider theme={…} >
@@ -141,7 +141,7 @@ function Parent() {
 
 ### `makeStyles`
 
-想使用 hook API 的话需要一些额外的工作。 你必须把父级属性作为第一个参数传递给 hook。
+想使用 hook API 的话需要一些额外的工作。 您必须把父级属性作为第一个参数传递给 hook。
 
 ```jsx
 const useStyles = makeStyles({
@@ -177,7 +177,7 @@ Not all the plugins are available in MUI by default. 以下（一个 [jss-preset
 - [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 - [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-props-sort/)
 
-当然，你也可以随意使用额外的插件。 我们有一个使用 [jss-rtl](https://github.com/alitaheri/jss-rtl) 插件的例子。
+当然，您也可以随意使用额外的插件。 我们有一个使用 [jss-rtl](https://github.com/alitaheri/jss-rtl) 插件的例子。
 
 ```jsx
 import { create } from 'jss';
@@ -218,7 +218,7 @@ const useStyles = makeStyles({
 
 ## CSS 注入顺序
 
-> 了解浏览器是如何计算CSS特性的**真的很重要**，因为这是覆盖样式时需要了解的关键因素之一。 我们推荐你阅读这段MDN: [如何计算？](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
+> 了解浏览器是如何计算CSS特性的**真的很重要**，因为这是覆盖样式时需要了解的关键因素之一。 我们推荐您阅读这段MDN: [如何计算？](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
 
 默认情况下，注入的 style 标签会被插入到页面`<head>`元素的最后。 它们的优先级高于您页面上的任何其他样式标签，如 CSS 模块、styled components。
 
@@ -230,7 +230,7 @@ const useStyles = makeStyles({
 import { StylesProvider } from '@mui/styles';
 
 <StylesProvider injectFirst>
-  {/* 你的组件树。
+  {/* 您的组件树。
       Styled components can override MUI's styles. */}
 </StylesProvider>;
 ```
@@ -272,7 +272,7 @@ Hook 调用顺序和类名顺序**不影响**注入属性权重 。
 
 ### insertionPoint
 
-JSS [提供了一种机制](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) 来控制这种情况。 通过在HTML中添加一个 `插入点`，你可以[控制CSS规则](https://cssinjs.org/jss-api/#attach-style-sheets-in-a-specific-order)应用于你的组件的顺序。
+JSS [提供了一种机制](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) 来控制这种情况。 通过在HTML中添加一个 `插入点`，您可以[控制CSS规则](https://cssinjs.org/jss-api/#attach-style-sheets-in-a-specific-order)应用于您的组件的顺序。
 
 #### HTML 注释
 
@@ -399,7 +399,7 @@ function render() {
 }
 ```
 
-你可以 [按照服务器端指南](/material-ui/guides/server-rendering/)了解更详细的例子，或者阅读[`ServerStyleSheets` API文档](/system/styles/api/#serverstylesheets)。
+您可以 [按照服务器端指南](/material-ui/guides/server-rendering/)了解更详细的例子，或者阅读[`ServerStyleSheets` API文档](/system/styles/api/#serverstylesheets)。
 
 ### Gatsby
 
@@ -423,7 +423,7 @@ function render() {
 
 ### 默认值
 
-默认情况下，`@mui/core/styles` 生成的类名 **不是固定值**； 所以你不能指望它们保持不变。 让我们以下面的样式（style）作为示例：
+默认情况下，`@mui/core/styles` 生成的类名 **不是固定值**； 所以您不能指望它们保持不变。 让我们以下面的样式（style）作为示例：
 
 ```js
 const useStyles = makeStyles({
@@ -502,7 +502,7 @@ withStyles（styles）;
 //           'string' 类型不能赋予给这些类型：'"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "column" | "column-reverse" | "row"...'。
 ```
 
-然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：:
+然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要您在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：:
 
 ```ts
 withStyles({
@@ -606,7 +606,7 @@ const ambiguousStyles = createStyles({
 });
 ```
 
-### 使用 `WithStyles` 来扩充你的属性
+### 使用 `WithStyles` 来扩充您的属性
 
 由于用 `withStyles(styles)` 装饰的组件被注入了一个特殊的 `classes` 属性，您需要相应地定义其属性：
 
@@ -637,7 +637,7 @@ interface Props {
 }
 ```
 
-然而，这并不是很[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)，因为它要求你在两个不同的地方维护类的名称(`'root'`, `'paper'`, `'button'`, ...)。 我们提供了一个类型操作符 `WithStyles`来帮助解决这个问题，所以你可以直接写:
+然而，这并不是很[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)，因为它要求您在两个不同的地方维护类的名称(`'root'`, `'paper'`, `'button'`, ...)。 我们提供了一个类型操作符 `WithStyles`来帮助解决这个问题，所以您可以直接写:
 
 ```ts
 这是对 <code>@mui/core/Button</code> 组件样式表的简化。

@@ -112,7 +112,7 @@ export default function MyComponent(props) {
 
 ## `ServerStyleSheets`
 
-这是一个处理服务器端渲染的类助手（class helper）。 [你可以遵循本指南的实用方法](/material-ui/guides/server-rendering/)
+这是一个处理服务器端渲染的类助手（class helper）。 [您可以遵循本指南的实用方法](/material-ui/guides/server-rendering/)
 
 ```jsx
 import * as ReactDOMServer from 'react-dom/server';
@@ -141,7 +141,7 @@ const response = `
 
 ### `sheets.collect(node) => React element`
 
-此方法将你的 React 节点包装在一个 provider 元素中。 它在渲染过程中收集样式表，以便它们以后可以发送到客户端。
+此方法将您的 React 节点包装在一个 provider 元素中。 它在渲染过程中收集样式表，以便它们以后可以发送到客户端。
 
 ### `sheets.toString() => CSS string`
 
@@ -207,14 +207,14 @@ export default function StyledComponents() {
 
 此组件允许您更改样式解决方案的行为。 多亏了 context，选项可以在 React 树下层使用。
 
-它最好是在你的**组件树的根部**使用。
+它最好是在您的**组件树的根部**使用。
 
 ### 属性
 
 | 名称                 | 类型     | 默认值   | 描述                                                                                                                                  |
 |:------------------ |:------ |:----- |:----------------------------------------------------------------------------------------------------------------------------------- |
 | children&nbsp;\* | node   |       | 您的组件树。                                                                                                                              |
-| disableGeneration  | bool   | false | 使用此选项，你可以禁用样式表的生成。 当在服务端的 HTML 之外渲染步骤中遍历 React 树的时候，这个属性卓有成效。 举个例子，若你正在使用 react-apillo 来提取服务端接口发出的所有查询（queries）。 使用这个属性可以大大加快遍历的速度。 |
+| disableGeneration  | bool   | false | 使用此选项，您可以禁用样式表的生成。 当在服务端的 HTML 之外渲染步骤中遍历 React 树的时候，这个属性卓有成效。 举个例子，若您正在使用 react-apillo 来提取服务端接口发出的所有查询（queries）。 使用这个属性可以大大加快遍历的速度。 |
 | generateClassName  | func   |       | JSS 的类名生成器。                                                                                                                         |
 | injectFirst        | bool   | false | 默认情况下，在页面中注入的 style 会被插入到 `<head>` 元素的最后。 因此，相比其他样式表单，它们能够表现地更为具体。 如果您想要覆盖 Material-UI 的样式，请设置此属性。                            |
 | jss                | object |       | JSS 的实例。                                                                                                                            |
@@ -343,7 +343,7 @@ export default MyComponent;
 
 ## `withTheme(Component) => Component`
 
-此 hook 返回了一个 `theme` 对象，你可以在函数组件中使用它。
+此 hook 返回了一个 `theme` 对象，您可以在函数组件中使用它。
 
 ### 参数
 

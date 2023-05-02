@@ -2,9 +2,9 @@
 
 <p class="description">用于快速布置自定义设计的 CSS 工具集。</p>
 
-MUI 核心配备了几十个**可随时使用**的组件。 这些组件是一个极好的起点，但当涉及到通过定制设计使你的网站脱颖而出时，从一个没有风格的状态开始可能会更简单。 系统介绍：
+MUI 核心配备了几十个**可随时使用**的组件。 这些组件是一个极好的起点，但当涉及到通过定制设计使您的网站脱颖而出时，从一个没有风格的状态开始可能会更简单。 系统介绍：
 
-**系统**让你可以利用主题中所定义的值来快速构建自定义 UI 组件。
+**系统**让您可以利用主题中所定义的值来快速构建自定义 UI 组件。
 
 ## 演示
 
@@ -183,8 +183,8 @@ The system relies on CSS-in-JS. It works with both Emotion and styled-components
 
 Pros:
 
-- 📚 它允许 API 具有很大的灵活性。 `sx` 属性支持 CSS 的超集。 所以**不需要重学 CSS**。 只要你学会了标准化的 CSS 语法，就可以了，很安全，十年来都没有变化。 当然如果你想要节省时间的话，也可以**选择**学习速记语法。
-- 📦 自动清除。 只有页面上使用过的 CSS 才会被发送到客户端。 所以初始化该捆绑包的大小成本是**灵活的**。 它的大小不会随着使用 CSS 属性的数量变多而同时增长。 你只需承担 [@emotion/react](https://bundlephobia.com/package/@emotion/react) 以及 [@mui/system](https://bundlephobia.com/package/@mui/system)的空间大小. 在 gzip 的环境下，它们大概占用约 15kb 的空间。 It cost around ~15 kB gzipped. 如果你已经正在使用核心组件，那么将不会带来额外的捆绑包资源占用。
+- 📚 它允许 API 具有很大的灵活性。 `sx` 属性支持 CSS 的超集。 所以**不需要重学 CSS**。 只要您学会了标准化的 CSS 语法，就可以了，很安全，十年来都没有变化。 当然如果您想要节省时间的话，也可以**选择**学习速记语法。
+- 📦 自动清除。 只有页面上使用过的 CSS 才会被发送到客户端。 所以初始化该捆绑包的大小成本是**灵活的**。 它的大小不会随着使用 CSS 属性的数量变多而同时增长。 您只需承担 [@emotion/react](https://bundlephobia.com/package/@emotion/react) 以及 [@mui/system](https://bundlephobia.com/package/@mui/system)的空间大小. 在 gzip 的环境下，它们大概占用约 15kb 的空间。 It cost around ~15 kB gzipped. 如果您已经正在使用核心组件，那么将不会带来额外的捆绑包资源占用。
 
 Cons:
 
@@ -294,7 +294,7 @@ The second option is to define your breakpoints as an array, from the smallest t
 
 {{"demo": "BreakpointsAsArray.js"}}
 
-> ⚠️ 只有当主题的断点数量有限时，才建议使用这个选项，例如 3.<br />。 如果你需要使用更多的断点，那么首选对象 API。 例如，MUI 默认主题设为 5。
+> ⚠️ 只有当主题的断点数量有限时，才建议使用这个选项，例如 3.<br />。 如果您需要使用更多的断点，那么首选对象 API。 例如，MUI 默认主题设为 5。
 
 You can skip breakpoints with the `null` value:
 

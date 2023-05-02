@@ -8,15 +8,15 @@
 2. [突破性变化第一部分：样式和主题](/material-ui/migration/v5-style-changes/)
 3. [突破性变化第二部分：组件](/material-ui/migration/v5-component-changes/)
 4. [从JSS迁移](/material-ui/migration/migrating-from-jss/)
-5. 故障排除 👈 _你在这里_
+5. 故障排除 👈 _您在这里_
 
 ## 迁移到v5后，样式损坏
 
-在你完成了迁移过程中的所有步骤后，有两个原因导致组件样式可能被破坏。
+在您完成了迁移过程中的所有步骤后，有两个原因导致组件样式可能被破坏。
 
-首先，检查你是否正确配置了`StyledEngineProvider`，如[样式库](/material-ui/migration/v5-style-changes/#style-library)部分所示。
+首先，检查您是否正确配置了`StyledEngineProvider`，如[样式库](/material-ui/migration/v5-style-changes/#style-library)部分所示。
 
-如果你的应用程序顶部已经使用了`StyledEngineProvider`，而样式仍然被破坏，可能是你的应用程序中仍然有`@material-ui/core`的情况。
+如果您的应用程序顶部已经使用了`StyledEngineProvider`，而样式仍然被破坏，可能是您的应用程序中仍然有`@material-ui/core`的情况。
 
 这可能是由应用程序中仍然依赖Material UI v4的其他依赖项造成的。
 

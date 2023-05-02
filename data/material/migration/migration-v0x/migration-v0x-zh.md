@@ -6,7 +6,7 @@
 
 ### 哇—— API 看起来完全不一样！ 这是否意味着1.0是完全不同的，我将不得不重新学习基本知识，而且迁移几乎是不可能的？
 
-我很高兴你问了这个问题! 答案是不。 核心概念并没有改变。 你会注意到，API提供了更多的灵活性，但这是有代价的------ 较低级别的组件抽象出较少的复杂性。
+我很高兴您问了这个问题! 答案是不。 核心概念并没有改变。 您会注意到，API提供了更多的灵活性，但这是有代价的------ 较低级别的组件抽象出较少的复杂性。
 
 ### 到底是什么带来了如此巨大的改变呢？
 
@@ -77,9 +77,9 @@ export default App;
 
 ### Autocomplete 自动补全组件
 
-Material UI并没有为解决这个问题提供一个高级别的API。 我们鼓励你去[探索React社区所建立的解决方案](/material-ui/react-autocomplete/)。
+Material UI并没有为解决这个问题提供一个高级别的API。 我们鼓励您去[探索React社区所建立的解决方案](/material-ui/react-autocomplete/)。
 
-在你的项目上运行 [迁移助手](https://github.com/mui/material-ui/tree/master/packages/material-ui-codemod)
+在您的项目上运行 [迁移助手](https://github.com/mui/material-ui/tree/master/packages/material-ui-codemod)
 
 ### Svg 图标
 

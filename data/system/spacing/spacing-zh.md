@@ -113,7 +113,7 @@ import { spacing } from '@mui/system';
 | `spacing` | `px` | `padding-left`, `padding-right` | [`spacing`](/material-ui/customization/default-theme/?expand-path=$.spacing) |
 | `spacing` | `py` | `padding-top`, `padding-bottom` | [`spacing`](/material-ui/customization/default-theme/?expand-path=$.spacing) |
 
-_有些人觉得属性简写让人困惑，如果你愿意的话，您也可以使用完整版：_
+_有些人觉得属性简写让人困惑，如果您愿意的话，您也可以使用完整版：_
 
 ```diff
 -<Box sx={{ pt: 2 }} />

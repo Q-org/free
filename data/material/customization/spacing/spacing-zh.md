@@ -46,7 +46,7 @@ theme.spacing(2); // = '8px'
 
 ## 多个参数
 
-`theme.spacing()` 最多接受 4 个参数。 你可以使用参数来减少样板的代码。
+`theme.spacing()` 最多接受 4 个参数。 您可以使用参数来减少样板的代码。
 
 ```diff
 -padding: `${theme.spacing(1)} ${theme.spacing(2)}`, // '8px 16px'

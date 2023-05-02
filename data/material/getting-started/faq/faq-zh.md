@@ -102,7 +102,7 @@ const theme = createTheme({
 根据经验，仅对动态样式属性使用内联样式。 CSS 的替代方案也有诸多优势，例如：
 
 - auto-prefixing
-- 对于你的 React 树控件而言，你在使用 `JssProvider` 构建一个 **subject（分支）**。
+- 对于您的 React 树控件而言，您在使用 `JssProvider` 构建一个 **subject（分支）**。
 - 您正在使用打包根据，而它拆分代码的方式导致创建了多个类名生成器的实例。
 - keyframes
 
@@ -331,7 +331,7 @@ To correct this issue, all components on the page need to be initialized such th
 
 You could end up accidentally using two class name generators in a variety of scenarios:
 
-- 比如你一不小心 **打包**了 两个版本的 Material-UI。 您没有正确设置某个和 material-ui 的同等依赖的依赖包。
+- 比如您一不小心 **打包**了 两个版本的 Material-UI。 您没有正确设置某个和 material-ui 的同等依赖的依赖包。
 - 您的项目是 monorepo 结构（例如，lerna，yarn workspaces），并且有多个包依赖着 `@mui/styles` 模块（这与前一个包或多或少相同）。
 - 您有几个使用 `@mui/styles` 的应用程序在同一页面上运行（例如，webpack 中的几个入口点被加载在同一页面上）。
 
@@ -401,7 +401,7 @@ The class names value relies on the concept of [class name generator](/system/st
     const html = ReactDOMServer.renderToString(
   ```
 
-- 你需要验证你的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @mui/core`。
+- 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @mui/core`。
 
   您也可以通过在 package.json 的依赖项中指定某一个特定的 MUI 版本，这样能够确保在不同环境中使用的版本是一致的。
 

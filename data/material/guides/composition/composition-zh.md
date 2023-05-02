@@ -6,7 +6,7 @@
 
 我们需要一种了解组件接收的子元素的本质的方式，这样可以尽可能提供最大的灵活性和最好的性能。 To solve this problem, we tag some of the components with a `muiName` static property when needed.
 
-但是，您仍可能需要封装一个组件以增强它的功能，而这可能与 `muiName` 的解决方案相冲突。 若你要封装一个组件，那么得验证该组件是否具有此静态属性的集合。
+但是，您仍可能需要封装一个组件以增强它的功能，而这可能与 `muiName` 的解决方案相冲突。 若您要封装一个组件，那么得验证该组件是否具有此静态属性的集合。
 
 如果您遇到此问题，那么请为封装组件附加上与被封装组件一样的标记。 另外，鉴于父组件可能需要对被封装的组件属性加以控制，您应该向父组件传递这些属性。
 
@@ -44,7 +44,7 @@ return React.createElement(props.component, props);
 </List>
 ```
 
-这种模式非常强大，它拥有很强的灵活性，也涵盖了与其他库互操作的方法，例如你最喜欢的一些 routing 或者 forms 的库。 但它也**带有一个小小的警告!**
+这种模式非常强大，它拥有很强的灵活性，也涵盖了与其他库互操作的方法，例如您最喜欢的一些 routing 或者 forms 的库。 但它也**带有一个小小的警告!**
 
 ### 当与内联函数一起使用时要注意
 
@@ -152,7 +152,7 @@ If the `GenericCustomComponent` will be used with a `component` prop provided, i
 
 ```ts
 -const SomeContent = props => <div {...props}>Hello, World!</div>;
-+const SomeContent = React.forwardRef((props, ref) => <div {...props} ref={ref}>你好，世界！
++const SomeContent = React.forwardRef((props, ref) => <div {...props} ref={ref}>您好，世界！
 </div>);
 <Tooltip title="Hello, again."><SomeContent /></Tooltip>;
 ```

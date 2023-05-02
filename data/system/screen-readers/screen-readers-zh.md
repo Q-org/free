@@ -8,7 +8,7 @@ The visually hidden style utility provides a common mechanism for hidings elemen
 
 {{"demo": "VisuallyHiddenUsage.js", "defaultCodeOpen": true}}
 
-如果你不追求实现严格的 CSP 政策，那么也可以这样编写代码：
+如果您不追求实现严格的 CSP 政策，那么也可以这样编写代码：
 
 ```jsx
 import { visuallyHidden } from '@mui/utils';
